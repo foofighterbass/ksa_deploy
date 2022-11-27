@@ -1,0 +1,12 @@
+---
+- name: "Install node"
+  become: yes
+  hosts: node
+  roles:
+    - role: node
+
+- name: "Install ksa"
+  become: yes
+  hosts: ksa
+  roles:
+    - role: ksa
