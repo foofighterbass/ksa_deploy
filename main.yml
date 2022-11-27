@@ -1,12 +1,12 @@
 ---
-- name: "Install node"
+- name: "Install docker_install"
   become: yes
-  hosts: node
+  hosts: docker_install
   roles:
-    - role: node
+    - role: docker_install
 
 - name: "Install ksa"
   become: yes
-  hosts: ksa
+  hosts: ksa_install
   roles:
-    - role: ksa
+    - role: ksa_install
